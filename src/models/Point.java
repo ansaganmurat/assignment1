@@ -4,12 +4,19 @@ public class Point {
     private double x;
     private double y;
 
-    public Point(double x, double y) {
+    public double getX() {
+        return x;
     }
 
-    // constructor having both parameters
+    public void setX(double x) {
+        this.x = x;
+    }
 
-    // distance(Point dest) - distance from current point to the dest point
+    public double getY() {
+        return y;
+    }
 
-    // toString
+    public void setY(double y) {
+        this.y = y;
+    }
 }
