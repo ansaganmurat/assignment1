@@ -10,8 +10,6 @@ public class MyApplication {
 
         File file = new File("source");
         Scanner sc = new Scanner(file);
-
-        // IMPORTANT: allows commas and spaces
         sc.useDelimiter("[,\\s]+");
 
         Shape shape = new Shape();

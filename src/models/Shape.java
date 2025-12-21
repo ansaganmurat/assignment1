@@ -4,15 +4,12 @@ import java.util.ArrayList;
 
 public class Shape {
 
-    // container of Points
     private ArrayList<Point> points = new ArrayList<>();
 
-    // adds point to container
     public void addPoint(Point point) {
         points.add(point);
     }
 
-    // calculates perimeter
     public double calculatePerimeter() {
         double perimeter = 0;
 
@@ -25,14 +22,12 @@ public class Shape {
         return perimeter;
     }
 
-    // average side length
     public double getAverageSide() {
         if (points.size() == 0)
             return 0;
         return calculatePerimeter() / points.size();
     }
 
-    // longest side
     public double getLongest() {
         double max = 0;
 
